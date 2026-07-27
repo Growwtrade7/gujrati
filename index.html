@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>ગુજરાતી 𝗧𝗿𝗮𝗱𝗲𝗿𝘀 • Ultra</title>
+  
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1929596317702279');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1929596317702279&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    body {
+      background: #0b0f1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 12px;
+    }
+
+    /* 🚀 ULTRA MOBILE CARD — glassmorphism + neon glow */
+    .mobile {
+      width: 100%;
+      max-width: 440px;
+      min-height: 95vh;
+      background: radial-gradient(circle at 20% 30%, #142b4b, #0a1424);
+      backdrop-filter: blur(2px);
+      border-radius: 48px;
+      padding: 26px 22px 30px;
+      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(0, 255, 136, 0.15), 0 0 40px #00ff8830;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.25s ease;
+      border: 1px solid rgba(0, 255, 136, 0.20);
+    }
+
+    /* animated orbs */
+    .mobile::before {
+      content: '';
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      background: #00ff8840;
+      border-radius: 50%;
+      filter: blur(110px);
+      top: -180px;
+      right: -140px;
+      opacity: 0.6;
+      animation: pulseGlow 6s infinite alternate;
+    }
+    .mobile::after {
+      content: '';
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      background: #2f7eff30;
+      border-radius: 50%;
+      filter: blur(100px);
+      bottom: -100px;
+      left: -80px;
+      animation: pulseGlow 8s infinite alternate-reverse;
+    }
+
+    @keyframes pulseGlow {
+      0% { opacity: 0.3; transform: scale(1); }
+      100% { opacity: 0.8; transform: scale(1.2); }
+    }
+
+    /* all content above pseudo */
+    .mobile > * {
+      position: relative;
+      z-index: 3;
+    }
+
+    /* ---- LOGO ULTRA ---- */
+    .logo {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #00ff88;
+      box-shadow: 0 0 30px #00ff8860, 0 0 60px #00ff8830;
+      margin: 0 auto 18px;
+      transition: 0.3s;
+      background: #0c1a2b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 34px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #ffffff, #b6ffd4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 0 20px #00ff8840;
+      font-family: 'Manrope', 'Segoe UI', system-ui, sans-serif;
+    }
+    .hero p {
+      color: #a0f0c0;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      margin-top: 6px;
+      background: rgba(0, 255, 136, 0.08);
+      display: inline-block;
+      padding: 4px 16px;
+      border-radius: 40px;
+      backdrop-filter: blur(4px);
+      border: 1px solid #00ff8840;
+    }
+    .desc {
+      margin: 16px 0 22px;
+      color: #d0e4f5;
+      font-weight: 500;
+      line-height: 1.7;
+      background: rgba(0, 10, 30, 0.3);
+      padding: 10px 14px;
+      border-radius: 30px;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    /* BUTTON — 3D neon */
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 18px;
+      padding: 16px 28px;
+      border-radius: 60px;
+      background: linear-gradient(145deg, #00ff88, #00b35c);
+      color: #0a1424;
+      box-shadow: 0 6px 0 #008a47, 0 12px 30px #00ff8840;
+      transition: all 0.1s ease;
+      width: 100%;
+      border: 1px solid #80ffb0;
+      letter-spacing: 0.3px;
+    }
+    .btn i {
+      font-size: 24px;
+      color: #0a1424;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 0 #008a47, 0 18px 40px #00ff8860;
+    }
+    .btn:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 #008a47;
+    }
+    .btn.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      filter: grayscale(0.5);
+    }
+
+    /* GRID CARDS — glass + glow */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .card {
+      background: rgba(12, 30, 50, 0.5);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(0, 255, 136, 0.15);
+      border-radius: 26px;
+      padding: 16px 6px;
+      text-align: center;
+      transition: 0.2s;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    .card i {
+      color: #00ff88;
+      font-size: 22px;
+      filter: drop-shadow(0 0 10px #00ff8860);
+    }
+    .card h3 {
+      font-size: 18px;
+      font-weight: 800;
+      margin: 6px 0 0;
+      color: #f0faff;
+    }
+    .card small {
+      color: #b0d0ea;
+      font-weight: 500;
+      font-size: 12px;
+      opacity: 0.9;
+    }
+    .card:hover {
+      border-color: #00ff88;
+      background: rgba(0, 255, 136, 0.05);
+    }
+
+    /* MARKET */
+    .market {
+      margin-top: 24px;
+    }
+    .markethead {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      font-weight: 700;
+      color: #d0eaff;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 6px 14px;
+      border-radius: 40px;
+      backdrop-filter: blur(4px);
+      border: 1px solid #00ff8820;
+    }
+    .markethead span {
+      color: #00ff88;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+    }
+    .markethead span i {
+      font-size: 10px;
+    }
+
+    /* FEATURES 2x2 */
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .feature {
+      background: rgba(12, 30, 50, 0.45);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(0, 255, 136, 0.12);
+      border-radius: 28px;
+      padding: 16px 6px;
+      text-align: center;
+      transition: 0.2s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .feature i {
+      font-size: 28px;
+      color: #00ff88;
+      margin-bottom: 6px;
+      filter: drop-shadow(0 0 12px #00ff8860);
+      display: block;
+    }
+    .feature div {
+      font-weight: 700;
+      font-size: 14px;
+      color: #e0f0fa;
+      letter-spacing: 0.2px;
+    }
+    .feature:hover {
+      border-color: #00ff88;
+      background: rgba(0, 255, 136, 0.06);
+    }
+
+    /* TRUST — ultra list */
+    .trust {
+      margin-top: 24px;
+      background: rgba(0, 20, 40, 0.5);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(0, 255, 136, 0.10);
+      border-radius: 32px;
+      padding: 18px 20px;
+      box-shadow: inset 0 0 30px rgba(0, 255, 136, 0.02);
+    }
+    .trust div {
+      margin: 10px 0;
+      color: #d0ecff;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+      padding-bottom: 8px;
+    }
+    .trust div:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .trust div::before {
+      content: "✦";
+      color: #00ff88;
+      font-weight: 900;
+      font-size: 18px;
+      filter: drop-shadow(0 0 6px #00ff88);
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 12px;
+      color: #8aaec9;
+      line-height: 1.7;
+      font-weight: 500;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 12px 12px;
+      border-radius: 40px;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.02);
+    }
+
+    /* Device lock notification */
+    .device-lock {
+      margin-top: 14px;
+      padding: 10px 14px;
+      background: rgba(255, 200, 50, 0.08);
+      border: 1px solid rgba(255, 200, 50, 0.2);
+      border-radius: 30px;
+      color: #ffd966;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+      backdrop-filter: blur(4px);
+      display: none;
+    }
+    .device-lock i {
+      margin-right: 8px;
+      color: #ffd966;
+    }
+    .device-lock.active {
+      display: block;
+    }
+
+    /* responsive fine-tune */
+    @media (max-width: 400px) {
+      .mobile { padding: 18px 14px; }
+      .hero h1 { font-size: 28px; }
+      .btn { font-size: 16px; padding: 14px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="https://uploads.onecompiler.io/44rdhnhnp/1785086478000/WhatsApp%20Image%202026-07-26%20at%2010.50.28%20PM.jpeg" alt="ગુજરાતી 𝗧𝗿𝗮𝗱𝗲𝗿𝘀">
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+      <h1>ગુજરાતી 𝗧𝗿𝗮𝗱𝗲𝗿𝘀</h1>
+      <p>🇮🇳 India's Fast Growing Trading Community</p>
+      <div class="desc">
+        <i class="fa-regular fa-circle-check" style="color:#00ff88; margin-right: 8px;"></i>
+        High Accuracy Setups • Market Insights • Real-Time Telegram Alerts
+      </div>
+      <!-- TELEGRAM LINK — FIXED with t.me -->
+      <a class="btn" target="_blank" href="" id="telegramBtn">
+        <i class="fa-brands fa-telegram"></i> Join Free Telegram
+      </a>
+      <!-- Device lock message -->
+      <div class="device-lock" id="deviceLockMsg">
+        <i class="fa-solid fa-lock"></i> This device is already subscribed. One person per device.
+      </div>
+    </div>
+
+    <!-- STATS GRID -->
+    <div class="grid">
+      <div class="card"><i class="fa-solid fa-users"></i><h3>10K+</h3><small>Members</small></div>
+      <div class="card"><i class="fa-solid fa-crosshairs"></i><h3>90%</h3><small>Accuracy</small></div>
+      <div class="card"><i class="fa-solid fa-signal"></i><h3>Daily</h3><small>Calls</small></div>
+    </div>
+
+    <!-- MARKET OVERVIEW -->
+    <div class="market">
+      <div class="markethead">
+        <strong><i class="fa-regular fa-clock" style="margin-right: 6px;"></i>Market Overview</strong>
+        <span><i class="fa-solid fa-circle" style="color:#00ff88; font-size: 10px;"></i> Live</span>
+      </div>
+      <div class="grid">
+        <div class="card"><i class="fa-solid fa-chart-line"></i><h3>NIFTY</h3><small>+0.55%</small></div>
+        <div class="card"><i class="fa-solid fa-building-columns"></i><h3>BANKNIFTY</h3><small>+0.53%</small></div>
+        <div class="card"><i class="fa-solid fa-indian-rupee-sign"></i><h3>SENSEX</h3><small>+0.42%</small></div>
+      </div>
+    </div>
+
+    <!-- FEATURES 2x2 ULTRA -->
+    <div class="features">
+      <div class="feature"><i class="fa-solid fa-bullseye"></i><div>High Accuracy Calls</div></div>
+      <div class="feature"><i class="fa-solid fa-bell"></i><div>Instant Alerts</div></div>
+      <div class="feature"><i class="fa-solid fa-chart-pie"></i><div>Market Analysis</div></div>
+      <div class="feature"><i class="fa-solid fa-arrow-trend-up"></i><div>Trading Setups</div></div>
+    </div>
+
+    <!-- TRUST SECTION -->
+    <div class="trust">
+      <div>Daily High Accuracy Calls</div>
+      <div>BankNifty, Nifty &amp; Stock Setups</div>
+      <div>Live Market Updates</div>
+      <div>Educational Trading Content</div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <i class="fa-regular fa-triangle-exclamation" style="color: #ffb347; margin-right: 6px;"></i>
+      Investing in securities markets are subject to market risks.<br>
+      <span style="color: #00ff88; font-weight: 600;">Educational purposes only.</span>
+    </div>
+
+  </div>
+
+  <script>
+    // ============================================================
+    // DEVICE FINGERPRINT — one person per device (simple & effective)
+    // ============================================================
+    (function() {
+      const btn = document.getElementById('telegramBtn');
+      const lockMsg = document.getElementById('deviceLockMsg');
+
+      // Generate a simple device fingerprint
+      function getDeviceFingerprint() {
+        const components = [
+          navigator.userAgent,
+          navigator.language,
+          navigator.platform,
+          screen.width,
+          screen.height,
+          screen.colorDepth,
+          navigator.hardwareConcurrency || 0,
+          navigator.deviceMemory || 0,
+          new Date().getTimezoneOffset()
+        ];
+        return components.join('|');
+      }
+
+      // Hash function (simple but effective)
+      function hashCode(str) {
+        let hash = 0;
+        for (let i = 0; i < str.length; i++) {
+          const char = str.charCodeAt(i);
+          hash = ((hash << 5) - hash) + char;
+          hash = hash & hash; // Convert to 32bit integer
+        }
+        return hash.toString(36);
+      }
+
+      const fingerprint = hashCode(getDeviceFingerprint());
+      const STORAGE_KEY = 'gujarati_trader_device_id';
+
+      // Check if this device is already registered
+      const storedFingerprint = localStorage.getItem(STORAGE_KEY);
+
+      if (storedFingerprint && storedFingerprint === fingerprint) {
+        // Same device — allow access
+        btn.classList.remove('disabled');
+        lockMsg.classList.remove('active');
+      } else if (storedFingerprint && storedFingerprint !== fingerprint) {
+        // Different device fingerprint detected — block
+        btn.classList.add('disabled');
+        lockMsg.classList.add('active');
+        btn.href = 'javascript:void(0)';
+        btn.style.pointerEvents = 'none';
+      } else {
+        // First time — register this device
+        localStorage.setItem(STORAGE_KEY, fingerprint);
+        btn.classList.remove('disabled');
+        lockMsg.classList.remove('active');
+      }
+
+      // Extra protection: if user tries to change localStorage, re-check
+      window.addEventListener('storage', function(e) {
+        if (e.key === STORAGE_KEY) {
+          const newFingerprint = localStorage.getItem(STORAGE_KEY);
+          if (newFingerprint && newFingerprint !== fingerprint) {
+            btn.classList.add('disabled');
+            lockMsg.classList.add('active');
+            btn.href = 'javascript:void(0)';
+            btn.style.pointerEvents = 'none';
+          }
+        }
+      });
+
+      // Also re-check on page visibility change (in case of tampering)
+      document.addEventListener('visibilitychange', function() {
+        const current = localStorage.getItem(STORAGE_KEY);
+        if (current && current !== fingerprint) {
+          btn.classList.add('disabled');
+          lockMsg.classList.add('active');
+          btn.href = 'javascript:void(0)';
+          btn.style.pointerEvents = 'none';
+        }
+      });
+
+    })();
+  </script>
+</body>
+</html>
