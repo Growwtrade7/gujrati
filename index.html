@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <title>ગુજરાતી 𝗧𝗿𝗮𝗱𝗲𝗿𝘀 • Join Free Trading Community</title>
   <meta name="description" content="Join India's fastest growing Gujarati trading community. Get daily market insights, live sessions, and real-time stock alerts. Learn, analyze and trade together.">
+  
+  <!-- Open Graph Tags - Meta Ads Ke Liye Important -->
+  <meta property="og:title" content="ગુજરાતી 𝗧𝗿𝗮𝗱𝗲𝗿𝘀 • Join Free Trading Community">
+  <meta property="og:description" content="Join India's fastest growing Gujarati trading community. Get daily market insights, live sessions, and real-time stock alerts.">
+  <meta property="og:image" content="https://i.ibb.co/PvJtSRq6/Whats-App-Image-2026-08-02-at-12-19-36-AM-jpeg-new-logo.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23111b2e' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='68' text-anchor='middle' fill='%238b5cf6' font-size='50' font-family='sans-serif' font-weight='bold'%3E📈%3C/text%3E%3C/svg%3E">
   
   <!-- Preconnect for performance -->
@@ -25,7 +34,7 @@
     (function() {
       'use strict';
       
-      // STEP 1: fbq function define (hamesha available)
+      // STEP 1: fbq function define
       window.fbq = function() {
         if (typeof window._fbq !== 'undefined' && typeof window._fbq.push === 'function') {
           window._fbq.push(arguments);
@@ -38,14 +47,13 @@
       window.fbq.version = '2.0';
       window.fbq.loaded = false;
       
-      // STEP 2: Pixel script load (background)
+      // STEP 2: Pixel script load
       var script = document.createElement('script');
       script.id = 'facebook-jssdk';
       script.src = 'https://connect.facebook.net/en_US/fbevents.js';
       script.async = true;
       script.onload = function() {
         window.fbq.loaded = true;
-        // Queue process
         if (window.fbq.queue && window.fbq.queue.length > 0) {
           var queue = window.fbq.queue.slice();
           window.fbq.queue = [];
@@ -67,6 +75,13 @@
       fbq('init', '1929596317702279');
       fbq('track', 'PageView');
       
+      // STEP 4: Track ViewContent for better optimization
+      fbq('track', 'ViewContent', {
+        content_name: 'Gujarati Traders Landing',
+        content_type: 'landing_page',
+        content_category: 'Trading Community'
+      });
+      
       console.log('✅ Meta Pixel initialized (ID: 1929596317702279)');
     })();
   </script>
@@ -76,12 +91,9 @@
     <img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1929596317702279&ev=PageView&noscript=1">
   </noscript>
 
-  <!-- ========================================================= -->
-  <!-- STYLES - FAST LOADING, MINIMAL, RESPONSIVE               -->
-  <!-- ========================================================= -->
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+    html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;scroll-behavior:smooth}
     body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#080c16;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:16px;color:#fff;line-height:1.5;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
     .app{width:100%;max-width:420px;background:linear-gradient(165deg,#111b2e,#0a111f);border-radius:40px;padding:28px 22px 32px;border:1px solid rgba(255,255,255,0.06);box-shadow:0 30px 80px rgba(0,0,0,0.8);position:relative;overflow:hidden}
     .app::before{content:'';position:absolute;top:-100px;left:-100px;width:250px;height:250px;background:radial-gradient(circle,rgba(6,182,212,0.12),transparent 70%);pointer-events:none;z-index:0}
@@ -96,13 +108,19 @@
     .hero .subhead{font-weight:600;font-size:14px;color:#94a3b8;background:rgba(255,255,255,0.03);display:inline-block;padding:2px 16px;border-radius:40px;border:1px solid rgba(255,255,255,0.04)}
     .hero .desc{margin-top:14px;font-size:15px;font-weight:500;color:#cbd5e1;line-height:1.6;background:rgba(255,255,255,0.03);padding:12px 16px;border-radius:24px;border:1px solid rgba(255,255,255,0.04)}
     .hero .desc i{color:#f472b6;margin-right:8px;filter:drop-shadow(0 0 10px rgba(236,72,153,0.3))}
-    .btn-telegram{display:flex;justify-content:center;align-items:center;gap:14px;width:100%;padding:18px 20px;background:linear-gradient(135deg,#8b5cf6,#ec4899);border:none;border-radius:60px;font-weight:800;font-size:18px;color:#fff;text-decoration:none;transition:all 0.15s cubic-bezier(0.4,0,0.2,1);box-shadow:0 10px 0 #4c1d95,0 12px 40px rgba(139,92,246,0.5);margin-top:8px;cursor:pointer;min-height:62px;border-bottom:2px solid rgba(255,255,255,0.15);position:relative;-webkit-tap-highlight-color:transparent;user-select:none}
-    .btn-telegram i{font-size:26px;color:#fff;transition:transform 0.2s ease;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.2));flex-shrink:0}
+    
+    /* CTA BUTTON - Meta Ads Optimized */
+    .btn-telegram{display:flex;justify-content:center;align-items:center;gap:14px;width:100%;padding:20px 24px;background:linear-gradient(135deg,#8b5cf6,#ec4899);border:none;border-radius:60px;font-weight:800;font-size:20px;color:#fff;text-decoration:none;transition:all 0.15s cubic-bezier(0.4,0,0.2,1);box-shadow:0 10px 0 #4c1d95,0 12px 40px rgba(139,92,246,0.5);margin-top:8px;cursor:pointer;min-height:68px;border-bottom:2px solid rgba(255,255,255,0.15);position:relative;-webkit-tap-highlight-color:transparent;user-select:none;letter-spacing:0.5px}
+    .btn-telegram i{font-size:28px;color:#fff;transition:transform 0.2s ease;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.2));flex-shrink:0}
+    .btn-telegram .pulse-dot{width:10px;height:10px;background:#4ade80;border-radius:50%;display:inline-block;margin-left:6px;animation:pulse 1.5s ease-in-out infinite;flex-shrink:0}
+    @keyframes pulse{0%,100%{transform:scale(0.8);opacity:0.6}50%{transform:scale(1.2);opacity:1}}
     .btn-telegram:hover{transform:translateY(-3px);box-shadow:0 12px 0 #4c1d95,0 20px 50px rgba(139,92,246,0.6)}
     .btn-telegram:hover i{transform:rotate(-5deg) scale(1.05)}
     .btn-telegram:active{transform:translateY(6px);box-shadow:0 4px 0 #4c1d95}
     .btn-telegram.loading{opacity:0.9;pointer-events:none;transform:translateY(4px);box-shadow:0 6px 0 #4c1d95}
     .btn-telegram .btn-text{transition:opacity 0.2s ease}
+    .btn-telegram .sub-text{display:block;font-size:11px;font-weight:500;opacity:0.8;margin-top:2px;letter-spacing:0}
+    
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}
     .stat-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:24px;padding:10px 4px;text-align:center;transition:all 0.2s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2)}
     .stat-card:nth-child(1) i{color:#06b6d4;filter:drop-shadow(0 0 12px rgba(6,182,212,0.4))}
@@ -135,8 +153,13 @@
     .footer{margin-top:20px;text-align:center;font-size:11px;font-weight:500;color:#64748b;line-height:1.8;padding:12px 8px 0;border-top:1px solid rgba(255,255,255,0.03)}
     .footer .highlight{background:linear-gradient(135deg,#8b5cf6,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700}
     .footer i{color:#fbbf24;margin-right:4px}
-    @media (max-width:420px){.app{padding:20px 14px;border-radius:32px}.hero h1{font-size:28px}.btn-telegram{font-size:16px;padding:16px;min-height:56px;box-shadow:0 8px 0 #4c1d95,0 12px 40px rgba(139,92,246,0.5)}.btn-telegram:hover{box-shadow:0 10px 0 #4c1d95,0 20px 50px rgba(139,92,246,0.6)}.stat-card h3{font-size:16px}.stat-card i{font-size:16px}.stat-card{padding:8px 4px}.feature-card i{font-size:20px}.feature-card div{font-size:11px}}
-    @media (max-width:360px){.app{padding:16px 10px;border-radius:24px}.hero h1{font-size:24px}.btn-telegram{font-size:14px;padding:14px;min-height:50px;gap:10px}.btn-telegram i{font-size:22px}.grid-3{gap:6px}.grid-2{gap:6px}.stat-card h3{font-size:14px}.feature-card i{font-size:18px}.trust-item{font-size:12px;padding:10px 0}}
+    
+    .social-proof{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:14px;padding:8px 12px;background:rgba(255,255,255,0.02);border-radius:60px;border:1px solid rgba(255,255,255,0.04);flex-wrap:wrap}
+    .social-proof span{font-size:11px;color:#94a3b8;display:flex;align-items:center;gap:4px}
+    .social-proof i{color:#fbbf24;font-size:11px}
+    
+    @media (max-width:420px){.app{padding:20px 14px;border-radius:32px}.hero h1{font-size:28px}.btn-telegram{font-size:18px;padding:18px 16px;min-height:60px;box-shadow:0 8px 0 #4c1d95,0 12px 40px rgba(139,92,246,0.5)}.btn-telegram:hover{box-shadow:0 10px 0 #4c1d95,0 20px 50px rgba(139,92,246,0.6)}.stat-card h3{font-size:16px}.stat-card i{font-size:16px}.stat-card{padding:8px 4px}.feature-card i{font-size:20px}.feature-card div{font-size:11px}}
+    @media (max-width:360px){.app{padding:16px 10px;border-radius:24px}.hero h1{font-size:24px}.btn-telegram{font-size:16px;padding:16px 12px;min-height:54px;gap:10px}.btn-telegram i{font-size:22px}.grid-3{gap:6px}.grid-2{gap:6px}.stat-card h3{font-size:14px}.feature-card i{font-size:18px}.trust-item{font-size:12px;padding:10px 0}}
     @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important}}
     .btn-telegram:focus-visible{outline:3px solid #8b5cf6;outline-offset:4px}
     @media print{body{background:#fff;color:#000}.app{box-shadow:none;border:1px solid #ddd;background:#fff}.btn-telegram{background:#8b5cf6;color:#fff;box-shadow:none}.stat-card,.feature-card,.trust-box{background:#f5f5f5;border-color:#ddd}}
@@ -146,9 +169,7 @@
 
   <main class="app" role="main">
     
-    <!-- ========================================================= -->
-    <!-- LOGO - PERMANENT (ImgBB)                                 -->
-    <!-- ========================================================= -->
+    <!-- LOGO -->
     <div class="logo-wrap">
       <div class="logo">
         <img 
@@ -167,14 +188,13 @@
     <header class="hero">
       <h1>ગુજરાતી 𝗧𝗿𝗮𝗱𝗲𝗿𝘀</h1>
       <span class="subhead" aria-label="India's Fast Growing Community">🇮🇳 India's Fast Growing Community</span>
+      
       <div class="desc">
         <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 
         Learn, Analyze &amp; Trade Together
       </div>
       
-      <!-- ========================================================= -->
-      <!-- CTA BUTTON - NEW TELEGRAM LINK                           -->
-      <!-- ========================================================= -->
+      <!-- CTA BUTTON -->
       <a 
         class="btn-telegram" 
         id="telegramBtn" 
@@ -184,8 +204,18 @@
         aria-label="Join our free Telegram trading community"
       >
         <i class="fa-brands fa-telegram" aria-hidden="true"></i> 
-        <span class="btn-text" id="btnText">Join Free Telegram</span>
+        <span class="btn-text" id="btnText">
+          Join Free Telegram
+          <span class="sub-text">⬇️ 100% Free • Limited Spots</span>
+        </span>
+        <span class="pulse-dot" aria-hidden="true"></span>
       </a>
+      
+      <div class="social-proof">
+        <span><i class="fa-solid fa-star"></i> 4.9/5</span>
+        <span><i class="fa-regular fa-circle-check"></i> Verified</span>
+        <span><i class="fa-regular fa-clock"></i> Live Now</span>
+      </div>
     </header>
 
     <!-- STATS -->
@@ -228,7 +258,7 @@
   </main>
 
   <!-- ========================================================= -->
-  <!-- JAVASCRIPT - FAST, CLEAN, 0 ERRORS                       -->
+  <!-- JAVASCRIPT - META ADS OPTIMIZED                          -->
   <!-- ========================================================= -->
   <script>
     (function() {
@@ -252,26 +282,90 @@
           return;
         }
         
+        // =========================================================
+        // SCROLL DEPTH TRACKING
+        // =========================================================
+        var scrollLogged = {25: false, 50: false, 75: false, 90: false};
+        var scrollTimeout;
+        
+        window.addEventListener('scroll', function() {
+          clearTimeout(scrollTimeout);
+          scrollTimeout = setTimeout(function() {
+            var scrollTop = window.scrollY;
+            var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            var percent = Math.round((scrollTop / docHeight) * 100);
+            
+            Object.keys(scrollLogged).forEach(function(key) {
+              if (percent >= parseInt(key) && !scrollLogged[key]) {
+                scrollLogged[key] = true;
+                try {
+                  if (typeof fbq === 'function') {
+                    fbq('track', 'Scroll_' + key + '%', {
+                      content_name: 'Gujarati Traders Landing',
+                      scroll_depth: key + '%'
+                    });
+                    console.log('✅ Scroll ' + key + '% tracked');
+                  }
+                } catch(e) {
+                  console.warn('⚠️ Scroll tracking error:', e.message);
+                }
+              }
+            });
+          }, 300);
+        }, {passive: true});
+        
+        // =========================================================
+        // TIME SPENT TRACKING
+        // =========================================================
+        var timeLogged = {30: false, 60: false, 120: false, 180: false};
+        var seconds = 0;
+        var timeInterval = setInterval(function() {
+          seconds += 5;
+          Object.keys(timeLogged).forEach(function(key) {
+            if (seconds >= parseInt(key) && !timeLogged[key]) {
+              timeLogged[key] = true;
+              try {
+                if (typeof fbq === 'function') {
+                  fbq('track', 'Time_' + key + 'sec', {
+                    content_name: 'Gujarati Traders Landing',
+                    time_spent: key + 's'
+                  });
+                  console.log('✅ Time ' + key + 's tracked');
+                }
+              } catch(e) {
+                console.warn('⚠️ Time tracking error:', e.message);
+              }
+            }
+          });
+        }, 5000);
+        
+        // =========================================================
+        // CTA CLICK - Lead Event
+        // =========================================================
         btn.addEventListener('click', function(e) {
           if (isProcessing) {
             e.preventDefault();
             return;
           }
           
-          // =========================================================
-          // TRACKING - 2 METHODS (0 bounce guarantee)
-          // =========================================================
           try {
             if (typeof fbq === 'function') {
               fbq('track', 'Lead', {
                 content_name: 'Telegram Join',
-                content_category: 'CTA Click'
+                content_category: 'CTA Click',
+                value: 5.00,
+                currency: 'USD'
               });
-              fbq('track', 'PageView');
+              
+              fbq('trackCustom', 'TelegramJoinClick', {
+                source: 'landing_page',
+                location: 'hero_cta'
+              });
+              
               console.log('✅ Meta Pixel: Lead tracked');
             }
           } catch(e) {
-            console.warn('⚠️ fbq error:', e.message);
+            console.warn('⚠️ Tracking error:', e.message);
           }
           
           // Image Pixel Fallback
@@ -283,28 +377,38 @@
             console.log('✅ Image Pixel: Lead tracked');
           } catch(e) {}
           
-          // =========================================================
-          // VISUAL FEEDBACK
-          // =========================================================
           isProcessing = true;
           btn.classList.add('loading');
           if (btnText) {
-            btnText.textContent = 'Opening...';
+            btnText.innerHTML = 'Opening Telegram... <span class="sub-text">⬇️ Redirecting now</span>';
           }
           
-          // =========================================================
-          // RESET
-          // =========================================================
           setTimeout(function() {
             btn.classList.remove('loading');
             if (btnText) {
-              btnText.textContent = 'Join Free Telegram';
+              btnText.innerHTML = 'Join Free Telegram <span class="sub-text">⬇️ 100% Free • Limited Spots</span>';
             }
             isProcessing = false;
           }, 3000);
         });
         
-        console.log('✅ Landing page ready');
+        // =========================================================
+        // EXIT INTENT
+        // =========================================================
+        document.addEventListener('mouseleave', function(e) {
+          if (e.clientY <= 0) {
+            try {
+              if (typeof fbq === 'function') {
+                fbq('track', 'ExitIntent', {
+                  content_name: 'Gujarati Traders Landing'
+                });
+                console.log('✅ Exit intent tracked');
+              }
+            } catch(e) {}
+          }
+        });
+        
+        console.log('✅ Meta Ads Landing Page Ready');
         console.log('✅ Pixel ID: 1929596317702279');
       });
       
